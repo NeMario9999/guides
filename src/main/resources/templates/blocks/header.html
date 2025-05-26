@@ -1,0 +1,37 @@
+<div th:fragment="header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            <i class="bi bi-code-slash me-2"></i>
+            <span>Just Guides</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/guides">Гайды</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/guides/add">Добавить гайд</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Контакты</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <div class="input-group">
+                    <input class="form-control bg-dark text-light border-purple" type="search" placeholder="Поиск гайдов...">
+                    <button class="btn btn-purple" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+</div>
